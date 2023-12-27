@@ -1,5 +1,6 @@
 package AV.AV.model;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -33,8 +34,8 @@ public class Reserva {
     /*Atributos: ID, data de início, data de fim, acomodação reservada, hóspede que
 realizou a reserva. */
 
-    private Date data_inicio;
-    private Date data_fim;
+    private LocalDateTime data_inicio;
+    private LocalDateTime data_fim;
     /*falta acomodacao e hospede*/
 
 
