@@ -1,5 +1,6 @@
 package AV.AV.model;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /*import org.springframework.format.annotation.DateTimeFormat;*/
@@ -13,11 +14,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name="acomodacoes")
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity(name="hospede")
+@Table(name="hospede")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 
 public class Hospede {
     /*ID, nome, data de registro, lista de reservas. */
@@ -28,7 +36,7 @@ public class Hospede {
     private String nome;
 
     /*@DateTimeFormat*/
-    private Date data_registro; /*(pattern="dd/MM/yyyy")*/
+    private LocalDateTime data_registro; /*(pattern="dd/MM/yyyy")*/
 
     /*falta reservas */
 }

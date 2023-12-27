@@ -9,12 +9,18 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
-@Entity
-@Table(name="acomodacoes")
+@Entity(name="anfitriao")
+@Table(name="anfitriao")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 
 public class Anfitriao {
     

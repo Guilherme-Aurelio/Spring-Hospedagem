@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import AV.AV.model.Anfitriao;
-import br.edu.ifrn.vendasestoque.repository.CategoriaRepository;
+import AV.AV.repository.AnfitriaoRepository;
 import jakarta.validation.Valid;
 
 

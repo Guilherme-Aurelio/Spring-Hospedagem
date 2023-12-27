@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import AV.AV.model.acomodacao.Acomodacao;
-import br.edu.ifrn.vendasestoque.repository.CategoriaRepository;
+import AV.AV.model.Acomodacao;
+import AV.AV.repository.AcomodacaoRepository;
 import jakarta.validation.Valid;
 
 @RestController
