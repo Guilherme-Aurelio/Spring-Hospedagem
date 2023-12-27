@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -34,5 +36,14 @@ realizou a reserva. */
     private Date data_inicio;
     private Date data_fim;
     /*falta acomodacao e hospede*/
+
+
+    @ManyToOne
+    @JoinColumn(name="acomodacao_id")
+    private Acomodacao acomodacao;
+
+    @ManyToOne
+    @JoinColumn(name = "hospede_id")
+    private Hospede hospede;
 
 }
